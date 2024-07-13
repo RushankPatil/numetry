@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="conntainer" >
+        <h1>Registration Form</h1>
+        <form id="Registration" >
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" name="" id="name" ><br>
+                <div id="ip1" style="color: red;"></div>
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="text" name="" id="email" ><br>
+                <div id="ip2"style="color: red;"></div>
+            </div>
+            <div class="form">
+                <label for="mobilenumber">Contact</label>
+                <input type="tel" name="" id="mobilenumber" >
+                <div id="ip3"style="color: red;"></div>
+            </div>
+            <div class="form">
+                <label for="username">User Name</label>
+                <input type="text" name="" id="username" ><br>
+                <div id="ip4"style="color: red;"></div>
+            </div>
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" ><br>
+                <div id="ip5"style="color: red;"></div>
+                </div>
+            <button type="submit">submit</button>
+        </form>
+        <div id="success-message"></div>
+        <div id="table">
+            <table id="myTable">
+                <tr>
+                </tr>
+                <tbody id="tabledata">
+                    <!-- Table rows will be dynamically generated here -->
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

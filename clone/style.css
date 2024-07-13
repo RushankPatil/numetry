@@ -1,0 +1,115 @@
+/* General Styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 25px;
+    height: 95.8vh;
+    background-color:gray;
+}
+
+#a{
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 88vw;
+    box-shadow: -1px 0px 20px 5px rgb(0, 0, 0);
+}
+
+#h{
+    height: 90px;
+    width: 1084px;
+    background-color: black;
+    color: aliceblue;
+}
+
+#b{
+    display: flex;
+}
+
+#f{
+    height: 90px;
+    width: 1084px;
+    background-color: black;
+    color: aliceblue;
+}
+
+h1{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+p{
+    padding-left: 10px;
+}
+
+h2{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+ul{
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+#side{
+    height: 360px;
+    width: 1050px;
+    background-color: rgb(255, 55, 0);
+}
+
+#para{
+    background-color: blanchedalmond;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* Responsive Styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+    /* Adjust layout and styles for smaller screens */
+    #main {
+        padding: 10px;
+        margin: 0px;
+        height: 940px;
+        background-color: white;
+    }
+    #h{
+        width: auto;
+    }
+    #f{
+        width: auto;
+        padding: auto;
+    }
+
+    #a {
+        width: auto;
+        height: auto;
+    }
+
+    #b {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    #side {
+        width: auto; /* Make sections full width */
+        height: 380px;
+        padding: 10px; /* Add spacing between sections */
+    }
+    #para{
+        width: auto;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    ul {
+        padding: 10px; /* Reduce padding for lists */
+    }
+}

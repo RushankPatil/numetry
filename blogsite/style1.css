@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#uh{
+    display: flex;
+    height: 20px;
+    background-color: blue;
+}
+#uh1{
+    padding-left: 10%;
+    padding-right: 70%;
+}
+#ti{
+    display: flex;
+    height: 80px;
+    background-color: aqua;
+}
+#title{
+    padding-left: 10%;
+    padding-right: 0.5%;
+    padding-top: 2%;
+}
+#sub{
+    padding-top: 3%;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    padding-left: 8%;
+    list-style: none;
+}
+.navbar a{
+    padding: 10px 20px;
+    color: whitesmoke;
+}
+#b{
+    display: flex;
+    padding-bottom: 10px;
+}
+#para{
+    padding-left: 10%;
+    width: 730px;
+    padding-top: 20px;
+    padding-right: 2%;
+    h3{
+        padding-top: 20px;
+    }
+}
+#side{
+    padding-left: 2%;
+    /* padding-top: 20px; */
+    width: 200px;
+    padding-right: 2%;
+    height: 450px;
+    background-color: brown;
+    h2{
+        padding-top: 20px;
+    }
+}
+
+#f{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 20px;
+    background-color: greenyellow;
+    padding-bottom: 20px;
+}
+#f1{
+    padding-right: 100px;
+}
+#c{
+    padding-left: 750px;
+    
+}
+.menu-icon {
+    max-width: 100%;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+@media (max-width: 768px) {
+    /* Adjust layout and styles for smaller screens */
+    #main {
+        padding: 10px;
+        margin: 0px;
+        height: 940px;
+        background-color: white;
+    }
+    #uh1{
+        padding-left: 10%;
+        padding-right: 35%;
+    }
+    #ti{
+        padding-top: 10px;
+        height: 80px;
+    }
+    #h{
+        width: auto;
+    }
+    #f{
+        width: auto;
+        padding: auto;
+    }
+
+    #a {
+        width: auto;
+        height: auto;
+    }
+
+    #b {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    #side {
+        width: auto; /* Make sections full width */
+        height: 450px;/* Add spacing between sections */
+    }
+    #para{
+        width: auto;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    ul {
+        padding: 10px; /* Reduce padding for lists */
+    }
+    #c{
+        padding-left: 0px;
+        padding-top: 110px;
+    }
+    #sub{
+        padding-top: 4.5%;
+        padding-left: 1%;
+    }
+    .menu-icon {
+        display: block;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+    .navbar a {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        /* top: 105%; */
+        right: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 200px;
+        border-radius: 10px;
+        /* background-color: rgb(248 68 98); */
+        /* transition: all .50s; */
+    }
+    .open {
+        right: 3%;
+    }
+    
+}
