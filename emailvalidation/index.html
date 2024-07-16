@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <h1 style="color: green;">Registration Form</h1>
+    <div id="formContainer">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter Name...">
+        <label for="emailInput">Email ID:</label>
+        <input type="email" id="emailInput" placeholder="Enter Email..."><br>
+        <label for="OTPInput">OTP:</label>
+        <input id="OTPInput" type="tel" placeholder="enter OTP"><br>
+        <button onclick="verify()">send OTP </button>
+        <button onclick="verifyOTP()">verify</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User data will be dynamically added here -->
+        </tbody>
+    </table>
+</body>
+<script src="index.js"></script>
+</html>
