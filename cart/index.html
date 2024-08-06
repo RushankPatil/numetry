@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+        <nav>
+            <button class="home-button" onclick="goHome()">Home</button>
+            <button id="reset-cart" class="reset-button" onclick="resetCart()">Reset Cart</button>
+            <button class="back-to-products" onclick="viewCart()">Cart</button>
+            <button class="logout-button" onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="login" class="view" style="display: none;">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="login-form" onsubmit="login(event)">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="product-list" class="view">
+           
+            <div class="product">
+                <img src="download (1).jpg" alt="img" class="product-image">
+                <h3>product1</h3>
+                <p>Price: $10</p>
+                <button class="add-to-cart" onclick="addToCart('product1', 10, 'download (1).jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="download (2).jpg" alt="img" class="product-image">
+                <h3>product2</h3>
+                <p>Price: $20</p>
+                <button class="add-to-cart" onclick="addToCart('product2', 20, 'download (2).jpg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="download.jpg" alt="img" class="product-image">
+                <h3>product3</h3>
+                <p>Price: $30</p>
+                <button class="add-to-cart" onclick="addToCart('product3', 30, 'download.jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="download.jpg" alt="img" class="product-image">
+                <h3>product4</h3>
+                <p>Price: $40</p>
+                <button class="add-to-cart" onclick="addToCart('product4', 40, 'download.jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="download (2).jpg" alt="img" class="product-image">
+                <h3>product5</h3>
+                <p>Price: $50</p>
+                <button class="add-to-cart" onclick="addToCart('product5', 50, 'download (2).jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="download (1).jpg" alt="img" class="product-image">
+                <h3>product6</h3>
+                <p>Price: $60</p>
+                <button class="add-to-cart" onclick="addToCart('product6', 60, 'download (1).jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="download (2).jpg" alt="img" class="product-image">
+                <h3>product7</h3>
+                <p>Price: $50</p>
+                <button class="add-to-cart" onclick="addToCart('product7', 50, 'download (2).jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="download (1).jpg" alt="img" class="product-image">
+                <h3>product8</h3>
+                <p>Price: $60</p>
+                <button class="add-to-cart" onclick="addToCart('product8', 60, 'download (1).jpg')">Add to Cart</button>
+            </div>
+        </div>
+        
+
+        <div id="cart" class="view" style="display: none;">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
