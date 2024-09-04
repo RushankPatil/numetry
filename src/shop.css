@@ -1,0 +1,41 @@
+.shop-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .shop-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .shop-page li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shop-page img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .shop-page h2 {
+    margin-top: 0;
+  }
+  
+  .shop-page button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .shop-page button:hover {
+    background-color: #444;
+  }
